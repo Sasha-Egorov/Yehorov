@@ -1,0 +1,24 @@
+<apex:page controller="MyController" tabstyle="Account">
+    <apex:pageBlock >
+        
+            <apex:pageBlockTable value="{!JobApplication}" var="j">
+            <apex:column value="{!j.Position_Id__r.Name}"/>  
+            <apex:column value="{!j.Position_Id__r.Salary__c }"/>
+            <apex:column value="{!j.Position_Id__r.Education__c}"/>  
+            <apex:column value="{!j.Position_Id__r.Description_Position__c }"/>              
+            <apex:column value="{!j.Position_Id__r.Skills__c}"/>  
+            <apex:column value="{!j.Position_Id__r.Description_Position__c }"/>                
+            <apex:column value="{!j.Candidate_Id__r.Name }"/>
+            <apex:column value="{!j.Candidate_Id__r.Last_Name__c }"/>                      
+            <apex:column value="{!j.Candidate_Id__r.Email__c}"/>  
+            <apex:column value="{!j.Candidate_Id__r.Work_Experience__c }"/>
+ 			<apex:column value="{!j.Candidate_Id__r.Phone_Number__c }"/>
+
+
+         
+                          
+        </apex:pageBlockTable>
+
+    </apex:pageBlock>
+
+</apex:page>
